@@ -11,14 +11,10 @@ void main(){
 
   print(days);
 
-  
-
   while(true){
   
   stdout.write("Remove the days one by one or exit:");
   String? input1 = stdin.readLineSync();
-  
-  
 
   if(input1!.toLowerCase()=='exit'){
 
@@ -28,7 +24,7 @@ void main(){
   days.remove(input1);
   
   print(days);
-  
+
   }
   print(days);
   

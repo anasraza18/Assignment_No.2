@@ -9,7 +9,7 @@ void main(){
 
   print("Original List : $original_list");
 
-  List<int> new_list = original_list.toSet().toList();
+  List<int> new_list = List.from(original_list.toSet().toList());
 
   print("Unique List of element : $new_list");
 }

@@ -9,7 +9,7 @@ void main(){
 
   print("original list : $original_list");
 
-  List<String> reversed_List = original_list.reversed.toList();
+  List<String> reversed_List = List.from(original_list.reversed.toList());
 
   print("Reversed List :$reversed_List");
 }

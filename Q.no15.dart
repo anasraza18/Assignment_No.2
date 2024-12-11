@@ -10,7 +10,7 @@ void main(){
 
   print(num);
 
-  List<int> pos =  num.where((element) => element >= 0).toList();
+  List<int> pos =  List.from(num.where((element) => element >= 0).toList());
 
   print(pos);
 }

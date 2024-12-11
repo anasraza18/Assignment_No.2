@@ -9,8 +9,8 @@ void main(){
 
   print("Original list : $original_list");
 
-  original_list.sort((a,b) => a.compareTo(b));
+  List<int> ascending_order =  List.from(original_list..sort((a,b) => a.compareTo(b)));
 
-  print("Ascending order : $original_list");
+  print("Ascending order : $ascending_order");
 
 }

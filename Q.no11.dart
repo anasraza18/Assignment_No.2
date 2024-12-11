@@ -9,7 +9,7 @@ void main(){
 
   print("Original List :$original_list");
 
-  List<int> new_list = original_list.sublist(0 , 3);
+  List<int> new_list = List.from(original_list.sublist(0 , 3));
 
   print("New List :$new_list");
 }

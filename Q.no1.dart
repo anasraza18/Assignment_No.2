@@ -9,5 +9,5 @@ void main(){
   String? input = stdin.readLineSync();
   List<String> names = input!.split(' ');
 
-  print(names);
+  names.forEach((name){print(name);});
 }

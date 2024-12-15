@@ -31,4 +31,19 @@ void main(){
   };
 print(world);
 
+var country = world['countries'];
+
+if(country != null){
+
+  country.forEach((country_name , details) {
+    print('country name : ${country_name}');
+    print('Capital name : ${details['capital city']}');
+    print('Currency : ${details['currency']}');
+    print('');
+  });
+
+}else{
+  print('Null');
+}
+
 }

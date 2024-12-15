@@ -7,9 +7,13 @@ void main(){
 
   List<int> original_list = [2,3,12,14,6,8];
 
-  print("Original List :$original_list");
+  int n = 3;
 
-  List<int> new_list = List.from(original_list.sublist(0 , 3));
+  print("Original List :");
+  original_list.forEach((originallist) {print("$originallist");});
 
-  print("New List :$new_list");
+  var new_list = List.from(original_list.getRange(0, n));
+
+  print("New List :");
+  new_list.forEach((newlist) {print("$newlist");});
 }

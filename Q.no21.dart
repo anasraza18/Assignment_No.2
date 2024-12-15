@@ -15,7 +15,7 @@ void main(){
 
   print(user);
 
-  if(user['isAdmin']==true && user['isActive']){
+  if(user['isAdmin']==true && user['isActive']==true){
 
     print("Active Admin");
 

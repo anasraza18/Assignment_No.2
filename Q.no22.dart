@@ -8,14 +8,14 @@ void main(){
 
   Map<dynamic,dynamic> shopping_cart = {
 
-    'Apple' : 5,
+    'Apple' : 10,
     'Samsung' : 2,
     'Nokia' : 0,
   };
 
   print(shopping_cart);
 
-  if(shopping_cart.containsKey('Apple') && shopping_cart['Apple'] >= 0){
+  if(shopping_cart.containsKey('Apple') && shopping_cart['Apple'] > 0){
 
     print("Product Found");
 

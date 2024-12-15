@@ -11,11 +11,11 @@ void main(){
 
   print(num);
 
-  int lar = num.fold(num[0], (a,b) => b > a ? b : a);
+  int lar = num.reduce((a,b) => b > a ? b : a);
 
   print("Largest number is $lar.");
 
-  int smal = num.fold(num[0], (a,b) => b < a ? b : a);
+  int small = num.fold(num[0], (a,b) => b < a ? b : a);
 
-  print("Smallest number is $smal.");
+  print("Smallest number is $small.");
 }

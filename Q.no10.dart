@@ -13,7 +13,7 @@ void main(){
 
   name.forEach((names) {print(names);});
 
-  var dup = List.from(name.toSet());
+  List<String> dup = List.from(name.toSet());
   
   print("Remove duplicate names");
   dup.forEach((names) {print(names);});

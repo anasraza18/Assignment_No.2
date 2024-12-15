@@ -12,7 +12,7 @@ void main(){
   print("Original List :");
   original_list.forEach((originallist) {print("$originallist");});
 
-  var new_list = List.from(original_list.getRange(0, n));
+  List<int> new_list = List.from(original_list.getRange(0, n));
 
   print("New List :");
   new_list.forEach((newlist) {print("$newlist");});

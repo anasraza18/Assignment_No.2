@@ -11,10 +11,11 @@ void main(){
   String? input = stdin.readLineSync();
   List<String> name = input!.toLowerCase().split(' ');
 
-  print(name);
+  name.forEach((names) {print(names);});
 
-  var dup = name.toSet();
-
-  print(dup);
+  var dup = List.from(name.toSet());
+  
+  print("Remove duplicate names");
+  dup.forEach((names) {print(names);});
 
 }
